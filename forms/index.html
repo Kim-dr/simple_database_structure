@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang ="en">
+    <head>
+        <meta charset= "UTF-8">
+        <title>Forms | Contact Login</title>
+    </head>
+
+    <body>
+        <header>
+            <h1>CONTACT LOGIN FORM</h1>
+        </header>
+        <form action="/submit" method="POST" aria-label="CONTACT FORM">
+
+            <!--Personal Information Section-->
+            <fieldset>
+                <legend>Your information</legend>
+
+                <!--Full name section-->
+                <label for ="fullname">Full Name:</label><br>
+                <input type="text" id="fullname" name="name" required placeholder="Enter your full name here...">
+                <br /><br />
+
+                <!--email-->
+                <label for="email">Email:</label><br>
+                <input type ="email" id="email" name="email" required placeholder="Enter your email address here...">
+                <br /><br />
+
+                <!--phone number-->
+                <label for="phone number">phone number:</label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9][10]" placeholder="0722000000">
+                <br /><br />
+
+                <!--gender-->
+                <label for = "gender">gender:</label> <br /><br/>
+                <input type="radio" name="gender" value ="male" required>Male<br /><br />
+                 <input type="radio" name="gender" value ="female" required>Female<br /><br />
+                </fieldset>
+
+                <!--Message section-->
+                <fieldset>
+                    <legend>Enter your message here</legend>
+
+                    <!--Enter your subject and message-->
+                    <label for ="subject">Subject:</label>
+                    <input type="text" id="subject" name="subject"><br /><br />
+                    <label for="messaage">Message:</label>
+                    <textarea name="comments" rows="4" cols="50" placeholder="write your comments"></textarea>
+                    <br /><br />
+
+                    <!--Enter your password-->
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" required maxlength="30" minlength="5" placeholder="Enter your secure password here">
+                   <br /><br />
+                   
+                   <!--Click here to submit the filled out form-->
+                    <button>Submit</button>
+                    
+                </fieldset>
+
+
+        </form>
+    </body>
+</html>
